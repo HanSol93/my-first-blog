@@ -8,6 +8,7 @@
                         </div>
                         <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
                         <p>{{ post.text|linebreaksbr }}</p>
+                        <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a> <!--승인된 댓글만 카운트 하려면 post.approved_comments.count-->
                     </div>
                 {% endfor %}
 {% endblock %}

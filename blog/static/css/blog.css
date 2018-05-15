@@ -54,3 +54,7 @@ h1, h2, h3, h4 {
 .post h3 a, .post h3 a:visited {
     color: #666;
 }
+
+.comment {
+    margin: 20px 0 20px;
+}
