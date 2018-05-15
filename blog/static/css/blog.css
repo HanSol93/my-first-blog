@@ -10,6 +10,7 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    padding-left:50px;
 }
 
 h1, h2, h3, h4 {
@@ -28,7 +29,15 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu1, .top-menu1:hover, .top-menu1:visited {
+    color: #ffffff;
+    font-size: 26pt;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+
+.top-menu2, .top-menu2:hover, .top-menu2:visited {
     color: #ffffff;
     font-size: 26pt;
     position: absolute;

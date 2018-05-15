@@ -12,23 +12,23 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# 프로젝트 내부에 경로를 빌드하십시오. 예시: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
+# 빠른 시작 개별 설정 - 프로덕션에 적합하지 않음.
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# 보안 경고 : 생산에 사용되는 비밀 키를 비밀로 해두세요!
 SECRET_KEY = '8ztxjeye_0y2ieo!=dh$d5px!t1##mu%t1ngoxfa+giokjc9#l'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# 보안 경고 : 프로덕션에서 디버그를 실행 한 상태에서 실행 안함.
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
-# Application definition
+# 응용 프로그럄 정
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
-# Database
+# 데이터베이스
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
@@ -82,7 +82,7 @@ DATABASES = {
 }
 
 
-# Password validation
+# 패스워드 유효성 검사
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -101,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
+# 국제화
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'ko'
@@ -115,8 +115,13 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# 정적 파일 (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# 로그인 설정
+
+LOGIN_REDIRECT_URL = '/'
